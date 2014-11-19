@@ -1,0 +1,291 @@
+/** social icons **/
+
+.social{
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+}
+
+.nav, 
+.nav-arrow{
+	display: inline-block;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+}
+
+.nav, .nav .icon {
+	height: 55px;
+	width: 55px;
+}
+
+.nav-arrow, .nav-arrow .icon {
+	height: 30px;
+	width: 30px;
+}
+.nav .icon{
+	display: block;
+	background: url("../img/icons/icons_all.png") no-repeat;
+	position: absolute;
+	text-indent: -5000px;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.nav-arrow .icon {
+	display: block;
+	background: url("../img/icons/icons_arrows.png") no-repeat;
+	position: absolute;
+	text-indent: -5000px;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.nav .icon.roll,
+.nav-arrow .icon.roll {
+	opacity: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+	-webkit-transform: rotate(-90deg) scale(0) skew(0deg) translate(0px);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg) scale(0) skew(0deg) translate(0px);
+	-ms-transform: rotate(-90deg) scale(0) skew(0deg) translate(0px);
+	transform: rotate(-90deg) scale(0) skew(0deg) translate(0px);
+}
+
+/* Hovers */
+
+.nav:hover .icon, .nav.active .icon,
+.nav-arrow:hover .icon, .nav-arrow.active .icon {
+	opacity: 0;
+	-webkit-transform: rotate(90deg) scale(0.5) skew(0deg) translate(0px);
+	-moz-transform: rotate(90deg) scale(0.5) skew(0deg) translate(0px);
+	-o-transform: rotate(90deg) scale(0.5) skew(0deg) translate(0px);
+	-ms-transform: rotate(90deg) scale(0.5) skew(0deg) translate(0px);
+	transform: rotate(90deg) scale(0.5) skew(0deg) translate(0px);
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+}
+
+.nav:hover .icon.roll, .nav.active .icon.roll,
+.nav-arrow:hover .icon.roll, .nav-arrow.active .icon.roll {
+	-webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+	-moz-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+	-o-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+	-ms-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+	transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+	opacity: 1;
+}
+
+
+/* BACKGROUNDs FOR EACH ICON */
+
+.nav.twitter span{
+	background-position: 0px 0px;
+}
+
+.nav.twitter span.roll{
+	background-position: 0px -55px;
+}
+
+.nav.facebook span{
+	background-position: -55px 0px;
+}
+
+.nav.facebook span.roll{
+	background-position: -55px -55px;
+}
+
+.nav.linkedin span{
+	background-position: -110px 0px;
+}
+
+.nav.linkedin span.roll{
+	background-position: -110px -55px;
+}
+
+.nav.email span{
+	background-position: -165px 0px;
+}
+
+.nav.email span.roll{
+	background-position: -165px -55px;
+}
+
+
+
+.nav-arrow.plus span{
+	background-position: 0px 0px;
+}
+
+.nav-arrow.plus span.roll{
+	background-position: 0px -30px;
+}
+
+.nav-arrow.minus span{
+	background-position: -30px 0px;
+}
+
+.nav-arrow.minus span.roll{
+	background-position: -30px -30px;
+}
+
+.nav-arrow.arrow_left span{
+	background-position: -60px 0px;
+}
+
+.nav-arrow.arrow_left span.roll{
+	background-position: -60px -30px;
+}
+
+.nav-arrow.arrow_right span{
+	background-position: -90px 0px;
+}
+
+.nav-arrow.arrow_right span.roll{
+	background-position: -90px -30px;
+}
+
+.nav-arrow.prev span{
+	background-position: -120px 0px;
+}
+
+.nav-arrow.prev span.roll{
+	background-position: -120px -30px;
+}
+
+.nav-arrow.next span{
+	background-position: -150px 0px;
+}
+
+.nav-arrow.next span.roll{
+	background-position: -150px -30px;
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+	.navi li {
+		padding: 0 0 0 55px;
+	}
+	.plus li {
+		padding: 0 0 0 85px !important;
+	}
+}
+
+/** iPhone4 portrait and landscape **/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+    
+
+
+}
+
+/** Retina iPhone5 portrait and landscape **/
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .nav-arrow, .nav-arrow .icon {
+		height: 55px;
+		width: 55px;
+	}
+
+    .nav-arrow .icon {
+		background: url("../img/icons/icons_arrows_big.png") no-repeat;
+	}
+
+    .nav-arrow.plus span{
+		background-position: 0px 0px;
+	}
+
+	.nav-arrow.plus span.roll{
+		background-position: 0px -55px;
+	}
+
+	.nav-arrow.minus span{
+		background-position: -55px 0px;
+	}
+
+	.nav-arrow.minus span.roll{
+		background-position: -55x -55px;
+	}
+
+	.nav-arrow.arrow_left span{
+		background-position: -110px 0px;
+	}
+
+	.nav-arrow.arrow_left span.roll{
+		background-position: -110px -55px;
+	}
+
+	.nav-arrow.arrow_right span{
+		background-position: -165px 0px;
+	}
+
+	.nav-arrow.arrow_right span.roll{
+		background-position: -165px -55px;
+	}
+
+	.nav-arrow.prev span{
+		background-position: -220px 0px;
+	}
+
+	.nav-arrow.prev span.roll{
+		background-position: -220px -55px;
+	}
+
+	.nav-arrow.next span{
+		background-position: -275px 0px;
+	}
+
+	.nav-arrow.next span.roll{
+		background-position: -275px -55px;
+	}
+
+}
+
+/** iPad 4 & iPad Mini portrait and landscape **/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    
+
+
+}
+
+
+/** Retina iPad 4 portrait and landscape **/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    
+
+
+}

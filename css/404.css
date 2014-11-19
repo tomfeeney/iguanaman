@@ -1,0 +1,1770 @@
+@import "http://fonts.googleapis.com/css?family=Lato";
+/** mobile 1st so starting at min-320 **/
+/** This is where the Magic starts **/
+
+body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Lato', arial, helvetica;
+    font-size: 13px;
+    height: 100%;
+    line-height: 1.25;
+    margin: 0;
+    text-align: center;
+    
+}
+h1 {
+    font: 30px/28px 'Lato', arial, helvetica;
+}
+h2 {
+    font: 28px/26px 'Lato', arial, helvetica;
+}
+h3 {
+    font: 16px/18px 'Lato', arial, helvetica;
+    color: #009900;
+}
+
+p {
+  margin: 0 0 1.4em;
+}
+
+em {
+  font-style: normal;
+  color: #ff4b24;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ff4b24;
+}
+
+button {
+  -webkit-font-smoothing: antialiased;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border-radius: 24px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  font-size: 1.33333em;
+  line-height: 45.6px;
+  font-family: "Dosis", sans-serif;
+  background-color: #f2f2f2;
+  font-weight: 600;
+  height: 48px;
+  width: 48px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  outline: none;
+  border: none;
+}
+button.hide {
+  opacity: 0;
+}
+
+.accelerate {
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.panel {
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  position: relative;
+}
+
+.scene,
+.layer {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.scene {
+  min-height: 460px;
+  position: relative;
+  overflow: hidden;
+}
+
+.layer {
+  position: absolute;
+}
+.layer div {
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.title {
+  font-size: 3em;
+  text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
+  margin-top: -0.7em;
+  position: absolute;
+  width: 100%;
+  top: 42%;
+}
+
+.background {
+  background: url(../img/404/background.jpg) no-repeat 50% 100%;
+  bottom: 96px;
+  background-size: cover;
+  position: absolute;
+  width: 110%;
+  left: -5%;
+  top: -5%;
+}
+
+.lighthouse {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  -webkit-animation: lighthouse 4s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-animation: lighthouse 4s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation: lighthouse 4s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  margin: 0px -64px;
+  background-size: 128px 224px;
+  height: 224px;
+  width: 128px;
+  background-image: url(../img/404/lighthouse.png);
+  background-repeat: no-repeat;
+  bottom: 64px;
+  position: absolute;
+  right: 20%;
+}
+
+.wave {
+  background: transparent repeat-x;
+  position: absolute;
+  width: 300%;
+  left: -100%;
+}
+.wave:after {
+  background-color: black;
+  position: absolute;
+  display: block;
+  content: "";
+  height: 500px;
+  width: 100%;
+  top: 100%;
+  left: 0;
+}
+.wave.plain {
+  background-image: url(../img/404/wave-plain.png);
+}
+.wave.paint {
+  background-image: url(../img/404/wave-paint.png);
+}
+
+.light {
+  margin: -120px -120px;
+  background-size: 240px 240px;
+  height: 240px;
+  width: 240px;
+  background-repeat: no-repeat;
+  bottom: 112px;
+  position: absolute;
+  left: 50%;
+}
+.light.orange {
+  background-image: url(../img/404/light-orange.png);
+}
+.light.purple {
+  background-image: url(../img/404/light-purple.png);
+}
+.light.a {
+  bottom: 80px;
+  left: 20%;
+}
+.light.b {
+  bottom: 80px;
+  left: 30%;
+}
+.light.c {
+  bottom: 112px;
+  left: 45%;
+}
+.light.d {
+  bottom: 96px;
+  left: 60%;
+}
+.light.e {
+  bottom: 112px;
+  left: 75%;
+}
+.light.f {
+  bottom: 64px;
+  left: 80%;
+}
+.light.phase-1 {
+  -webkit-animation: phase 20s 0.1s infinite linear;
+  -moz-animation: phase 20s 0.1s infinite linear;
+  animation: phase 20s 0.1s infinite linear;
+}
+.light.phase-2 {
+  -webkit-animation: phase 18s 0.1s infinite linear;
+  -moz-animation: phase 18s 0.1s infinite linear;
+  animation: phase 18s 0.1s infinite linear;
+}
+.light.phase-3 {
+  -webkit-animation: phase 16s 0.1s infinite linear;
+  -moz-animation: phase 16s 0.1s infinite linear;
+  animation: phase 16s 0.1s infinite linear;
+}
+.light.phase-4 {
+  -webkit-animation: phase 14s 0.1s infinite linear;
+  -moz-animation: phase 14s 0.1s infinite linear;
+  animation: phase 14s 0.1s infinite linear;
+}
+.light.phase-5 {
+  -webkit-animation: phase 12s 0.1s infinite linear;
+  -moz-animation: phase 12s 0.1s infinite linear;
+  animation: phase 12s 0.1s infinite linear;
+}
+.light.phase-6 {
+  -webkit-animation: phase 10s 0.1s infinite linear;
+  -moz-animation: phase 10s 0.1s infinite linear;
+  animation: phase 10s 0.1s infinite linear;
+}
+
+.rope {
+  width: 120%;
+  position: relative;
+  left: -10%;
+  position: relative;
+}
+
+.hanger {
+  -webkit-transform-origin: 0% 0%;
+  -moz-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+  position: absolute;
+}
+.hanger.position-1 {
+  top: 28%;
+}
+.hanger.position-2 {
+  top: 46%;
+}
+.hanger.position-3 {
+  top: 59%;
+}
+.hanger.position-4 {
+  top: 66.5%;
+}
+.hanger.position-5 {
+  top: 69.5%;
+}
+.hanger.position-6 {
+  top: 66.5%;
+}
+.hanger.position-7 {
+  top: 59%;
+}
+.hanger.position-8 {
+  top: 46%;
+}
+.hanger.position-9 {
+  top: 28%;
+}
+.hanger.position-1 {
+  left: 10%;
+}
+.hanger.position-2 {
+  left: 20%;
+}
+.hanger.position-3 {
+  left: 30%;
+}
+.hanger.position-4 {
+  left: 40%;
+}
+.hanger.position-5 {
+  left: 50%;
+}
+.hanger.position-6 {
+  left: 60%;
+}
+.hanger.position-7 {
+  left: 70%;
+}
+.hanger.position-8 {
+  left: 80%;
+}
+.hanger.position-9 {
+  left: 90%;
+}
+
+.board {
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  margin: 0px -140px;
+  background-size: 280px 280px;
+  height: 280px;
+  width: 280px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -4px;
+  left: 0;
+}
+.board.birds {
+  background-image: url(../img/404/board-birds.png);
+}
+.board.cloud-1 {
+  background-image: url(../img/404/board-cloud-1.png);
+}
+.board.cloud-2 {
+  background-image: url(../img/404/board-cloud-2.png);
+}
+.board.cloud-3 {
+  background-image: url(../img/404/board-cloud-3.png);
+}
+.board.cloud-4 {
+  background-image: url(../img/404/board-cloud-4.png);
+}
+
+.swing-1 {
+  -webkit-animation: swing 4s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-animation: swing 4s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation: swing 4s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.swing-2 {
+  -webkit-animation: swing 3.5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-animation: swing 3.5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation: swing 3.5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.swing-3 {
+  -webkit-animation: swing 3s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-animation: swing 3s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation: swing 3s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.swing-4 {
+  -webkit-animation: swing 2.5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-animation: swing 2.5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation: swing 2.5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.swing-5 {
+  -webkit-animation: swing 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-animation: swing 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation: swing 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.wave.depth-10 {
+  -webkit-animation: wave 8s 0.1s infinite linear;
+  -moz-animation: wave 8s 0.1s infinite linear;
+  animation: wave 8s 0.1s infinite linear;
+  bottom: 140px;
+  margin: 0px 0px;
+  background-size: 40px 16px;
+  height: 16px;
+}
+.wave.depth-10:after {
+  height: 144px;
+}
+
+.rope.depth-10 {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+  top: 20%;
+}
+.rope.depth-10 .hanger {
+  -webkit-transform: scale(0.25);
+  -moz-transform: scale(0.25);
+  transform: scale(0.25);
+}
+
+.wave.depth-20 {
+  -webkit-animation: wave 7.55556s 0.1s infinite linear;
+  -moz-animation: wave 7.55556s 0.1s infinite linear;
+  animation: wave 7.55556s 0.1s infinite linear;
+  bottom: 120px;
+  margin: 0px 0px;
+  background-size: 80px 32px;
+  height: 32px;
+}
+.wave.depth-20:after {
+  height: 128px;
+}
+
+.rope.depth-20 {
+  -webkit-transform: scale(1.02778);
+  -moz-transform: scale(1.02778);
+  transform: scale(1.02778);
+  top: 16.66667%;
+}
+.rope.depth-20 .hanger {
+  -webkit-transform: scale(0.27778);
+  -moz-transform: scale(0.27778);
+  transform: scale(0.27778);
+}
+
+.wave.depth-30 {
+  -webkit-animation: wave 7.11111s 0.1s infinite linear;
+  -moz-animation: wave 7.11111s 0.1s infinite linear;
+  animation: wave 7.11111s 0.1s infinite linear;
+  bottom: 100px;
+  margin: 0px 0px;
+  background-size: 120px 48px;
+  height: 48px;
+}
+.wave.depth-30:after {
+  height: 112px;
+}
+
+.rope.depth-30 {
+  -webkit-transform: scale(1.05556);
+  -moz-transform: scale(1.05556);
+  transform: scale(1.05556);
+  top: 13.33333%;
+}
+.rope.depth-30 .hanger {
+  -webkit-transform: scale(0.30556);
+  -moz-transform: scale(0.30556);
+  transform: scale(0.30556);
+}
+
+.wave.depth-40 {
+  -webkit-animation: wave 6.66667s 0.1s infinite linear;
+  -moz-animation: wave 6.66667s 0.1s infinite linear;
+  animation: wave 6.66667s 0.1s infinite linear;
+  bottom: 80px;
+  margin: 0px 0px;
+  background-size: 160px 64px;
+  height: 64px;
+}
+.wave.depth-40:after {
+  height: 96px;
+}
+
+.rope.depth-40 {
+  -webkit-transform: scale(1.08333);
+  -moz-transform: scale(1.08333);
+  transform: scale(1.08333);
+  top: 10.0%;
+}
+.rope.depth-40 .hanger {
+  -webkit-transform: scale(0.33333);
+  -moz-transform: scale(0.33333);
+  transform: scale(0.33333);
+}
+
+.wave.depth-50 {
+  -webkit-animation: wave 6.22222s 0.1s infinite linear;
+  -moz-animation: wave 6.22222s 0.1s infinite linear;
+  animation: wave 6.22222s 0.1s infinite linear;
+  bottom: 60px;
+  margin: 0px 0px;
+  background-size: 200px 80px;
+  height: 80px;
+}
+.wave.depth-50:after {
+  height: 80px;
+}
+
+.rope.depth-50 {
+  -webkit-transform: scale(1.11111);
+  -moz-transform: scale(1.11111);
+  transform: scale(1.11111);
+  top: 6.66667%;
+}
+.rope.depth-50 .hanger {
+  -webkit-transform: scale(0.36111);
+  -moz-transform: scale(0.36111);
+  transform: scale(0.36111);
+}
+
+.wave.depth-60 {
+  -webkit-animation: wave 5.77778s 0.1s infinite linear;
+  -moz-animation: wave 5.77778s 0.1s infinite linear;
+  animation: wave 5.77778s 0.1s infinite linear;
+  bottom: 40px;
+  margin: 0px 0px;
+  background-size: 240px 96px;
+  height: 96px;
+}
+.wave.depth-60:after {
+  height: 64px;
+}
+
+.rope.depth-60 {
+  -webkit-transform: scale(1.13889);
+  -moz-transform: scale(1.13889);
+  transform: scale(1.13889);
+  top: 3.33333%;
+}
+.rope.depth-60 .hanger {
+  -webkit-transform: scale(0.38889);
+  -moz-transform: scale(0.38889);
+  transform: scale(0.38889);
+}
+
+.wave.depth-70 {
+  -webkit-animation: wave 5.33333s 0.1s infinite linear;
+  -moz-animation: wave 5.33333s 0.1s infinite linear;
+  animation: wave 5.33333s 0.1s infinite linear;
+  bottom: 20px;
+  margin: 0px 0px;
+  background-size: 280px 112px;
+  height: 112px;
+}
+.wave.depth-70:after {
+  height: 48px;
+}
+
+.rope.depth-70 {
+  -webkit-transform: scale(1.16667);
+  -moz-transform: scale(1.16667);
+  transform: scale(1.16667);
+  top: 0.0%;
+}
+.rope.depth-70 .hanger {
+  -webkit-transform: scale(0.41667);
+  -moz-transform: scale(0.41667);
+  transform: scale(0.41667);
+}
+
+.wave.depth-80 {
+  -webkit-animation: wave 4.88889s 0.1s infinite linear;
+  -moz-animation: wave 4.88889s 0.1s infinite linear;
+  animation: wave 4.88889s 0.1s infinite linear;
+  bottom: 0px;
+  margin: 0px 0px;
+  background-size: 320px 128px;
+  height: 128px;
+}
+.wave.depth-80:after {
+  height: 32px;
+}
+
+.rope.depth-80 {
+  -webkit-transform: scale(1.19444);
+  -moz-transform: scale(1.19444);
+  transform: scale(1.19444);
+  top: -3.33333%;
+}
+.rope.depth-80 .hanger {
+  -webkit-transform: scale(0.44444);
+  -moz-transform: scale(0.44444);
+  transform: scale(0.44444);
+}
+
+.wave.depth-90 {
+  -webkit-animation: wave 4.44444s 0.1s infinite linear;
+  -moz-animation: wave 4.44444s 0.1s infinite linear;
+  animation: wave 4.44444s 0.1s infinite linear;
+  bottom: -20px;
+  margin: 0px 0px;
+  background-size: 360px 144px;
+  height: 144px;
+}
+.wave.depth-90:after {
+  height: 16px;
+}
+
+.rope.depth-90 {
+  -webkit-transform: scale(1.22222);
+  -moz-transform: scale(1.22222);
+  transform: scale(1.22222);
+  top: -6.66667%;
+}
+.rope.depth-90 .hanger {
+  -webkit-transform: scale(0.47222);
+  -moz-transform: scale(0.47222);
+  transform: scale(0.47222);
+}
+
+.wave.depth-100 {
+  -webkit-animation: wave 4s 0.1s infinite linear;
+  -moz-animation: wave 4s 0.1s infinite linear;
+  animation: wave 4s 0.1s infinite linear;
+  bottom: -40px;
+  margin: 0px 0px;
+  background-size: 400px 160px;
+  height: 160px;
+}
+.wave.depth-100:after {
+  height: 0px;
+}
+
+.rope.depth-100 {
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  transform: scale(1.25);
+  top: -10%;
+}
+.rope.depth-100 .hanger {
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  transform: scale(0.5);
+}
+/** end key frames **/
+/** END mobile 1st **/
+@media only screen and (min-width: 480px) {
+    .css-media:after {
+        color: #eee;
+        content: "min-480 ";
+    }
+    .scene {
+    min-height: 360px;
+}
+.rope.depth-10 {
+    top: 10%;
+}
+.rope.depth-10 .hanger {
+    transform: scale(0.3);
+}
+.rope.depth-20 {
+    top: 6.11111%;
+}
+.rope.depth-20 .hanger {
+    transform: scale(0.33333);
+}
+.rope.depth-30 {
+    top: 2.22222%;
+}
+.rope.depth-30 .hanger {
+    transform: scale(0.36667);
+}
+.rope.depth-40 {
+    top: -1.66667%;
+}
+.rope.depth-40 .hanger {
+    transform: scale(0.4);
+}
+.rope.depth-50 {
+    top: -5.55556%;
+}
+.rope.depth-50 .hanger {
+    transform: scale(0.43333);
+}
+.rope.depth-60 {
+    top: -9.44444%;
+}
+.rope.depth-60 .hanger {
+    transform: scale(0.46667);
+}
+.rope.depth-70 {
+    top: -13.3333%;
+}
+.rope.depth-70 .hanger {
+    transform: scale(0.5);
+}
+.rope.depth-80 {
+    top: -17.2222%;
+}
+.rope.depth-80 .hanger {
+    transform: scale(0.53333);
+}
+.rope.depth-90 {
+    top: -21.1111%;
+}
+.rope.depth-90 .hanger {
+    transform: scale(0.56667);
+}
+.rope.depth-100 {
+    top: -25%;
+}
+.rope.depth-100 .hanger {
+    transform: scale(0.6);
+}
+
+
+
+}
+/** --------------------------------------------------------------------------------------------------------------------- **/
+
+@media only screen and (min-width: 768px) {
+    .css-media:after {
+        color: #eee;
+        content: "min-768 ";
+    }
+    .title {
+    font-size: 3.46667em;
+}
+.background {
+    bottom: 96px;
+}
+.lighthouse {
+    background-size: 192px 336px;
+    bottom: 128px;
+    height: 336px;
+    margin: 0 -96px;
+    width: 192px;
+}
+.light {
+    background-size: 280px 280px;
+    height: 280px;
+    margin: -140px;
+    width: 280px;
+}
+.light.a {
+    bottom: 144px;
+}
+.light.b {
+    bottom: 144px;
+}
+.light.c {
+    bottom: 192px;
+}
+.light.d {
+    bottom: 160px;
+}
+.light.e {
+    bottom: 192px;
+}
+.light.f {
+    bottom: 128px;
+}
+.wave.depth-10 {
+    background-size: 60px 24px;
+    bottom: 210px;
+    height: 24px;
+    margin: 0;
+}
+.wave.depth-10:after {
+    height: 216px;
+}
+.rope.depth-10 {
+    top: 20%;
+}
+.rope.depth-10 .hanger {
+    transform: scale(0.5);
+}
+.wave.depth-20 {
+    background-size: 120px 48px;
+    bottom: 180px;
+    height: 48px;
+    margin: 0;
+}
+.wave.depth-20:after {
+    height: 192px;
+}
+.rope.depth-20 {
+    top: 16.6667%;
+}
+.rope.depth-20 .hanger {
+    transform: scale(0.55556);
+}
+.wave.depth-30 {
+    background-size: 180px 72px;
+    bottom: 150px;
+    height: 72px;
+    margin: 0;
+}
+.wave.depth-30:after {
+    height: 168px;
+}
+.rope.depth-30 {
+    top: 13.3333%;
+}
+.rope.depth-30 .hanger {
+    transform: scale(0.61111);
+}
+.wave.depth-40 {
+    background-size: 240px 96px;
+    bottom: 120px;
+    height: 96px;
+    margin: 0;
+}
+.wave.depth-40:after {
+    height: 144px;
+}
+.rope.depth-40 {
+    top: 10%;
+}
+.rope.depth-40 .hanger {
+    transform: scale(0.66667);
+}
+.wave.depth-50 {
+    background-size: 300px 120px;
+    bottom: 90px;
+    height: 120px;
+    margin: 0;
+}
+.wave.depth-50:after {
+    height: 120px;
+}
+.rope.depth-50 {
+    top: 6.66667%;
+}
+.rope.depth-50 .hanger {
+    transform: scale(0.72222);
+}
+.wave.depth-60 {
+    background-size: 360px 144px;
+    bottom: 60px;
+    height: 144px;
+    margin: 0;
+}
+.wave.depth-60:after {
+    height: 96px;
+}
+.rope.depth-60 {
+    top: 3.33333%;
+}
+.rope.depth-60 .hanger {
+    transform: scale(0.77778);
+}
+.wave.depth-70 {
+    background-size: 420px 168px;
+    bottom: 30px;
+    height: 168px;
+    margin: 0;
+}
+.wave.depth-70:after {
+    height: 72px;
+}
+.rope.depth-70 {
+    top: 0;
+}
+.rope.depth-70 .hanger {
+    transform: scale(0.83333);
+}
+.wave.depth-80 {
+    background-size: 480px 192px;
+    bottom: 0;
+    height: 192px;
+    margin: 0;
+}
+.wave.depth-80:after {
+    height: 48px;
+}
+.rope.depth-80 {
+    top: -3.33333%;
+}
+.rope.depth-80 .hanger {
+    transform: scale(0.88889);
+}
+.wave.depth-90 {
+    background-size: 540px 216px;
+    bottom: -30px;
+    height: 216px;
+    margin: 0;
+}
+.wave.depth-90:after {
+    height: 24px;
+}
+.rope.depth-90 {
+    top: -6.66667%;
+}
+.rope.depth-90 .hanger {
+    transform: scale(0.94444);
+}
+.wave.depth-100 {
+    background-size: 600px 240px;
+    bottom: -60px;
+    height: 240px;
+    margin: 0;
+}
+.wave.depth-100:after {
+    height: 0;
+}
+.rope.depth-100 {
+    top: -10%;
+}
+.rope.depth-100 .hanger {
+    transform: scale(1);
+}
+
+
+
+    
+
+}
+/** --------------------------------------------------------------------------------------------------------------------- **/
+
+@media only screen and (min-width: 1024px) {
+    .css-media:after {
+        color: #eee;
+        content: "min-1024 ";
+    }
+    .title {
+    font-size: 3.46667em;
+}
+.background {
+    bottom: 160px;
+}
+.lighthouse {
+    background-size: 208px 364px;
+    bottom: 128px;
+    height: 364px;
+    margin: 0 -104px;
+    width: 208px;
+}
+.light {
+    background-size: 320px 320px;
+    height: 320px;
+    margin: -160px;
+    width: 320px;
+}
+.light.a {
+    bottom: 112px;
+    left: 15%;
+}
+.light.b {
+    bottom: 160px;
+}
+.light.c {
+    bottom: 208px;
+}
+.light.d {
+    bottom: 176px;
+}
+.light.e {
+    bottom: 208px;
+}
+.light.f {
+    bottom: 128px;
+    left: 85%;
+}
+.wave.depth-10 {
+    background-size: 68px 27.2px;
+    bottom: 238px;
+    height: 27px;
+    margin: 0;
+}
+.wave.depth-10:after {
+    height: 244.8px;
+}
+.rope.depth-10 {
+    top: 10%;
+}
+.rope.depth-10 .hanger {
+    transform: scale(0.5);
+}
+.wave.depth-20 {
+    background-size: 136px 54.4px;
+    bottom: 204px;
+    height: 54px;
+    margin: 0;
+}
+.wave.depth-20:after {
+    height: 217.6px;
+}
+.rope.depth-20 {
+    top: 6.66667%;
+}
+.rope.depth-20 .hanger {
+    transform: scale(0.56111);
+}
+.wave.depth-30 {
+    background-size: 204px 81.6px;
+    bottom: 170px;
+    height: 82px;
+    margin: 0;
+}
+.wave.depth-30:after {
+    height: 190.4px;
+}
+.rope.depth-30 {
+    top: 3.33333%;
+}
+.rope.depth-30 .hanger {
+    transform: scale(0.62222);
+}
+.wave.depth-40 {
+    background-size: 272px 108.8px;
+    bottom: 136px;
+    height: 109px;
+    margin: 0;
+}
+.wave.depth-40:after {
+    height: 163.2px;
+}
+.rope.depth-40 {
+    top: 0;
+}
+.rope.depth-40 .hanger {
+    transform: scale(0.68333);
+}
+.wave.depth-50 {
+    background-size: 340px 136px;
+    bottom: 102px;
+    height: 136px;
+    margin: 0;
+}
+.wave.depth-50:after {
+    height: 136px;
+}
+.rope.depth-50 {
+    top: -3.33333%;
+}
+.rope.depth-50 .hanger {
+    transform: scale(0.74444);
+}
+.wave.depth-60 {
+    background-size: 408px 163.2px;
+    bottom: 68px;
+    height: 163px;
+    margin: 0;
+}
+.wave.depth-60:after {
+    height: 108.8px;
+}
+.rope.depth-60 {
+    top: -6.66667%;
+}
+.rope.depth-60 .hanger {
+    transform: scale(0.80556);
+}
+.wave.depth-70 {
+    background-size: 476px 190.4px;
+    bottom: 34px;
+    height: 190px;
+    margin: 0;
+}
+.wave.depth-70:after {
+    height: 81.6px;
+}
+.rope.depth-70 {
+    top: -10%;
+}
+.rope.depth-70 .hanger {
+    transform: scale(0.86667);
+}
+.wave.depth-80 {
+    background-size: 544px 217.6px;
+    bottom: 0;
+    height: 218px;
+    margin: 0;
+}
+.wave.depth-80:after {
+    height: 54.4px;
+}
+.rope.depth-80 {
+    top: -13.3333%;
+}
+.rope.depth-80 .hanger {
+    transform: scale(0.92778);
+}
+.wave.depth-90 {
+    background-size: 612px 244.8px;
+    bottom: -34px;
+    height: 245px;
+    margin: 0;
+}
+.wave.depth-90:after {
+    height: 27.2px;
+}
+.rope.depth-90 {
+    top: -16.6667%;
+}
+.rope.depth-90 .hanger {
+    transform: scale(0.98889);
+}
+.wave.depth-100 {
+    background-size: 680px 272px;
+    bottom: -68px;
+    height: 272px;
+    margin: 0;
+}
+.wave.depth-100:after {
+    height: 0;
+}
+.rope.depth-100 {
+    top: -20%;
+}
+.rope.depth-100 .hanger {
+    transform: scale(1.05);
+}
+
+}
+/** --------------------------------------------------------------------------------------------------------------------- **/
+
+@media only screen and (min-width: 1224px) {
+    .css-media:after {
+        color: #eee;
+        content: "min-1224 ";
+    }
+    .lighthouse {
+    background-size: 224px 392px;
+    height: 392px;
+    margin: 0 -112px;
+    width: 224px;
+}
+.light {
+    background-size: 400px 400px;
+    height: 400px;
+    margin: -200px;
+    width: 400px;
+}
+.wave.depth-10 {
+    background-size: 72px 28.8px;
+    bottom: 252px;
+    height: 29px;
+    margin: 0;
+}
+.wave.depth-10:after {
+    height: 259.2px;
+}
+.rope.depth-10 {
+    top: 5%;
+}
+.rope.depth-10 .hanger {
+    transform: scale(0.6);
+}
+.wave.depth-20 {
+    background-size: 144px 57.6px;
+    bottom: 216px;
+    height: 58px;
+    margin: 0;
+}
+.wave.depth-20:after {
+    height: 230.4px;
+}
+.rope.depth-20 {
+    top: 1.66667%;
+}
+.rope.depth-20 .hanger {
+    transform: scale(0.67778);
+}
+.wave.depth-30 {
+    background-size: 216px 86.4px;
+    bottom: 180px;
+    height: 86px;
+    margin: 0;
+}
+.wave.depth-30:after {
+    height: 201.6px;
+}
+.rope.depth-30 {
+    top: -1.66667%;
+}
+.rope.depth-30 .hanger {
+    transform: scale(0.75556);
+}
+.wave.depth-40 {
+    background-size: 288px 115.2px;
+    bottom: 144px;
+    height: 115px;
+    margin: 0;
+}
+.wave.depth-40:after {
+    height: 172.8px;
+}
+.rope.depth-40 {
+    top: -5%;
+}
+.rope.depth-40 .hanger {
+    transform: scale(0.83333);
+}
+.wave.depth-50 {
+    background-size: 360px 144px;
+    bottom: 108px;
+    height: 144px;
+    margin: 0;
+}
+.wave.depth-50:after {
+    height: 144px;
+}
+.rope.depth-50 {
+    top: -8.33333%;
+}
+.rope.depth-50 .hanger {
+    transform: scale(0.91111);
+}
+.wave.depth-60 {
+    background-size: 432px 172.8px;
+    bottom: 72px;
+    height: 173px;
+    margin: 0;
+}
+.wave.depth-60:after {
+    height: 115.2px;
+}
+.rope.depth-60 {
+    top: -11.6667%;
+}
+.rope.depth-60 .hanger {
+    transform: scale(0.98889);
+}
+.wave.depth-70 {
+    background-size: 504px 201.6px;
+    bottom: 36px;
+    height: 202px;
+    margin: 0;
+}
+.wave.depth-70:after {
+    height: 86.4px;
+}
+.rope.depth-70 {
+    top: -15%;
+}
+.rope.depth-70 .hanger {
+    transform: scale(1.06667);
+}
+.wave.depth-80 {
+    background-size: 576px 230.4px;
+    bottom: 0;
+    height: 230px;
+    margin: 0;
+}
+.wave.depth-80:after {
+    height: 57.6px;
+}
+.rope.depth-80 {
+    top: -18.3333%;
+}
+.rope.depth-80 .hanger {
+    transform: scale(1.14444);
+}
+.wave.depth-90 {
+    background-size: 648px 259.2px;
+    bottom: -36px;
+    height: 259px;
+    margin: 0;
+}
+.wave.depth-90:after {
+    height: 28.8px;
+}
+.rope.depth-90 {
+    top: -21.6667%;
+}
+.rope.depth-90 .hanger {
+    transform: scale(1.22222);
+}
+.wave.depth-100 {
+    background-size: 720px 288px;
+    bottom: -72px;
+    height: 288px;
+    margin: 0;
+}
+.wave.depth-100:after {
+    height: 0;
+}
+.rope.depth-100 {
+    top: -25%;
+}
+.rope.depth-100 .hanger {
+    transform: scale(1.3);
+}
+
+
+
+}
+/** --------------------------------------------------------------------------------------------------------------------- **/
+
+@media only screen and (min-width: 1824px) {
+    .css-media:after {
+        color: #eee;
+        content: "min-1824 ";
+    }
+
+
+
+}
+/** --------------------------------------------------------------------------------------------------------------------- **/
+
+/** iPhone4 portrait and landscape **/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+    
+    .css-media:after {
+        color: #eee;
+        content: "iPhone4 - portrait and landscape";
+    }
+
+    h1, h2, h3, p, a, small {
+        text-rendering: geometricPrecision;
+    }
+    .board {
+        display: none;
+    }
+    .rope {
+        display: none;
+    }
+
+
+}
+
+/** Retina iPhone5 portrait and landscape **/
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) {
+    
+    .css-media:after {
+        color: #eee;
+        content: "iPhone5 - portrait and landscape";
+    }
+
+    h1, h2, h3, p, a, small {
+        text-rendering: geometricPrecision;
+    }
+    .board {
+        display: none;
+    }
+    .rope {
+        display: none;
+    }
+
+
+}
+
+/** iPad 4 & iPad Mini portrait and landscape **/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    
+    .css-media:after {
+        color: #eee;
+        content: "iPad & iPad Mini - portrait and landscape";
+    }
+
+    h1, h2, h3, p, a, small {
+        text-rendering: geometricPrecision;
+    }
+
+
+}
+
+
+/** Retina iPad 4 portrait and landscape **/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    
+    .css-media:after {
+        color: #eee;
+        content: "iPad Retina - portrait and landscape";
+    }
+
+    h1, h2, h3, p, a, small {
+        text-rendering: geometricPrecision;
+    }
+
+}
+
+
+/* iPhone 5/5S Retina Display Portrait */
+@media screen and (device-aspect-ratio: 40/71) and (max-device-width: 640px) and (orientation:portrait) {}
+
+/* iPhone 5/5S Retina Display Landscape */
+@media screen and (device-aspect-ratio: 40/71) and (max-device-width: 640px) and (orientation:landscape) {}
+
+/* iPad 3/4/Air Retina Display Portrait */
+@media screen and (device-aspect-ratio: 3/4) and (max-device-width: 1536px) and (orientation:portrait) {}
+
+/* iPad 3/4/Air Retina Display Landscape */
+@media screen and (device-aspect-ratio: 3/4) and (max-device-width: 1536px) and (orientation:landscape) {}
+
+@-webkit-keyframes phase {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+
+  75% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes phase {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+
+  75% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes phase {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+
+  75% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes phase {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+
+  75% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes tilt {
+  0% {
+    -webkit-transform: rotateX(-30deg);
+    -moz-transform: rotateX(-30deg);
+    transform: rotateX(-30deg);
+  }
+
+  25% {
+    -webkit-transform: rotateX( 30deg);
+    -moz-transform: rotateX( 30deg);
+    transform: rotateX( 30deg);
+  }
+
+  50% {
+    -webkit-transform: rotateY(-30deg);
+    -moz-transform: rotateY(-30deg);
+    transform: rotateY(-30deg);
+  }
+
+  75% {
+    -webkit-transform: rotateY( 30deg);
+    -moz-transform: rotateY( 30deg);
+    transform: rotateY( 30deg);
+  }
+
+  100% {
+    -webkit-transform: rotateZ( 20deg);
+    -moz-transform: rotateZ( 20deg);
+    transform: rotateZ( 20deg);
+  }
+}
+
+@-moz-keyframes tilt {
+  0% {
+    -webkit-transform: rotateX(-30deg);
+    -moz-transform: rotateX(-30deg);
+    transform: rotateX(-30deg);
+  }
+
+  25% {
+    -webkit-transform: rotateX( 30deg);
+    -moz-transform: rotateX( 30deg);
+    transform: rotateX( 30deg);
+  }
+
+  50% {
+    -webkit-transform: rotateY(-30deg);
+    -moz-transform: rotateY(-30deg);
+    transform: rotateY(-30deg);
+  }
+
+  75% {
+    -webkit-transform: rotateY( 30deg);
+    -moz-transform: rotateY( 30deg);
+    transform: rotateY( 30deg);
+  }
+
+  100% {
+    -webkit-transform: rotateZ( 20deg);
+    -moz-transform: rotateZ( 20deg);
+    transform: rotateZ( 20deg);
+  }
+}
+
+@-ms-keyframes tilt {
+  0% {
+    -webkit-transform: rotateX(-30deg);
+    -moz-transform: rotateX(-30deg);
+    transform: rotateX(-30deg);
+  }
+
+  25% {
+    -webkit-transform: rotateX( 30deg);
+    -moz-transform: rotateX( 30deg);
+    transform: rotateX( 30deg);
+  }
+
+  50% {
+    -webkit-transform: rotateY(-30deg);
+    -moz-transform: rotateY(-30deg);
+    transform: rotateY(-30deg);
+  }
+
+  75% {
+    -webkit-transform: rotateY( 30deg);
+    -moz-transform: rotateY( 30deg);
+    transform: rotateY( 30deg);
+  }
+
+  100% {
+    -webkit-transform: rotateZ( 20deg);
+    -moz-transform: rotateZ( 20deg);
+    transform: rotateZ( 20deg);
+  }
+}
+
+@keyframes tilt {
+  0% {
+    -webkit-transform: rotateX(-30deg);
+    -moz-transform: rotateX(-30deg);
+    transform: rotateX(-30deg);
+  }
+
+  25% {
+    -webkit-transform: rotateX( 30deg);
+    -moz-transform: rotateX( 30deg);
+    transform: rotateX( 30deg);
+  }
+
+  50% {
+    -webkit-transform: rotateY(-30deg);
+    -moz-transform: rotateY(-30deg);
+    transform: rotateY(-30deg);
+  }
+
+  75% {
+    -webkit-transform: rotateY( 30deg);
+    -moz-transform: rotateY( 30deg);
+    transform: rotateY( 30deg);
+  }
+
+  100% {
+    -webkit-transform: rotateZ( 20deg);
+    -moz-transform: rotateZ( 20deg);
+    transform: rotateZ( 20deg);
+  }
+}
+
+@-webkit-keyframes wave {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
+    -moz-transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
+    transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
+    -moz-transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
+    transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
+  }
+}
+
+@-moz-keyframes wave {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
+    -moz-transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
+    transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
+    -moz-transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
+    transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
+  }
+}
+
+@-ms-keyframes wave {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
+    -moz-transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
+    transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
+    -moz-transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
+    transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
+  }
+}
+
+@keyframes wave {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
+    -moz-transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
+    transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
+    -moz-transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
+    transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
+  }
+}
+
+@-webkit-keyframes lighthouse {
+  0% {
+    -webkit-transform: translate3d(15%,0,0) rotateZ(10deg);
+    -moz-transform: translate3d(15%,0,0) rotateZ(10deg);
+    transform: translate3d(15%,0,0) rotateZ(10deg);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-15%,0,0) rotateZ(-10deg);
+    -moz-transform: translate3d(-15%,0,0) rotateZ(-10deg);
+    transform: translate3d(-15%,0,0) rotateZ(-10deg);
+  }
+}
+
+@-moz-keyframes lighthouse {
+  0% {
+    -webkit-transform: translate3d(15%,0,0) rotateZ(10deg);
+    -moz-transform: translate3d(15%,0,0) rotateZ(10deg);
+    transform: translate3d(15%,0,0) rotateZ(10deg);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-15%,0,0) rotateZ(-10deg);
+    -moz-transform: translate3d(-15%,0,0) rotateZ(-10deg);
+    transform: translate3d(-15%,0,0) rotateZ(-10deg);
+  }
+}
+
+@-ms-keyframes lighthouse {
+  0% {
+    -webkit-transform: translate3d(15%,0,0) rotateZ(10deg);
+    -moz-transform: translate3d(15%,0,0) rotateZ(10deg);
+    transform: translate3d(15%,0,0) rotateZ(10deg);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-15%,0,0) rotateZ(-10deg);
+    -moz-transform: translate3d(-15%,0,0) rotateZ(-10deg);
+    transform: translate3d(-15%,0,0) rotateZ(-10deg);
+  }
+}
+
+@keyframes lighthouse {
+  0% {
+    -webkit-transform: translate3d(15%,0,0) rotateZ(10deg);
+    -moz-transform: translate3d(15%,0,0) rotateZ(10deg);
+    transform: translate3d(15%,0,0) rotateZ(10deg);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-15%,0,0) rotateZ(-10deg);
+    -moz-transform: translate3d(-15%,0,0) rotateZ(-10deg);
+    transform: translate3d(-15%,0,0) rotateZ(-10deg);
+  }
+}
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotateZ(10deg);
+    -moz-transform: rotateZ(10deg);
+    transform: rotateZ(10deg);
+  }
+
+  100% {
+    -webkit-transform: rotateZ(-10deg);
+    -moz-transform: rotateZ(-10deg);
+    transform: rotateZ(-10deg);
+  }
+}
+
+@-moz-keyframes swing {
+  0% {
+    -webkit-transform: rotateZ(10deg);
+    -moz-transform: rotateZ(10deg);
+    transform: rotateZ(10deg);
+  }
+
+  100% {
+    -webkit-transform: rotateZ(-10deg);
+    -moz-transform: rotateZ(-10deg);
+    transform: rotateZ(-10deg);
+  }
+}
+
+@-ms-keyframes swing {
+  0% {
+    -webkit-transform: rotateZ(10deg);
+    -moz-transform: rotateZ(10deg);
+    transform: rotateZ(10deg);
+  }
+
+  100% {
+    -webkit-transform: rotateZ(-10deg);
+    -moz-transform: rotateZ(-10deg);
+    transform: rotateZ(-10deg);
+  }
+}
+
+@keyframes swing {
+  0% {
+    -webkit-transform: rotateZ(10deg);
+    -moz-transform: rotateZ(10deg);
+    transform: rotateZ(10deg);
+  }
+
+  100% {
+    -webkit-transform: rotateZ(-10deg);
+    -moz-transform: rotateZ(-10deg);
+    transform: rotateZ(-10deg);
+  }
+}

@@ -1,0 +1,877 @@
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+    display: inline-block;
+}
+footer {
+    display: block;
+    padding: 55px 0 0 0;
+}
+audio, canvas, video {
+    display: inline-block;
+}
+audio:not([controls]) {
+    display: none;
+}
+[hidden] {
+    display: none;
+}
+html {
+    font-size: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+body {
+    font-family: 'Lato', arial, helvetica;
+    font-size: 13px;
+    height: 100%;
+    line-height: 1.25;
+    margin: 0;
+}
+body {
+    background: url(../img/bg_iguanaman.png) repeat-x scroll 0 0 #000000;
+    background-attachment: fixed;
+    color: #ccc;
+    font-size: 13px;
+    height: 100%;
+    line-height: 1.25;
+    margin: 0;
+}
+a:hover, a:active {
+    outline: 0 none;
+}
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+b, strong {
+    font-weight: bold;
+}
+blockquote {
+    margin: 1em 40px;
+}
+blockquote.reptile {
+  font: 12px/20px 'Lato', arial, helvetica;
+  font-style: italic;
+  padding: 10px;
+  border-top: 1px solid #009900;
+  border-bottom: 1px solid #009900;
+  margin: 5px;
+  background-image: url(../img/openquote.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  text-indent: 25px;
+  text-align: left;
+  }
+  blockquote.reptile span {
+     display: block;
+     background-image: url(../img/closequote.png);
+     background-repeat: no-repeat;
+     background-position: bottom right;
+   }
+
+dfn {
+    font-style: italic;
+}
+span.hr {
+    background: none repeat scroll 0 0 #333333;
+    box-shadow: 0 1px 0 #ababab;
+    float: left;
+    height: 1px;
+    margin: 20px 0;
+    width: 100%;
+}
+ins {
+    background: none repeat scroll 0 0 #ff9;
+    color: #000;
+    text-decoration: none;
+}
+mark {
+    background: none repeat scroll 0 0 #ff0;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+pre, code, kbd, samp {
+    font-family: monospace,monospace;
+    font-size: 1em;
+}
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+q {
+    quotes: none;
+}
+q:before, q:after {
+    content: none;
+}
+small {
+    color: #666666;
+    font-size: 85%;
+}
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {
+    top: -0.5em;
+}
+sub {
+    bottom: -0.25em;
+}
+ul, ol {
+    margin: 5px 0;
+    padding: 0;
+}
+dd {
+    margin: 0 0 0 40px;
+}
+nav ul, nav ol {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+figure {
+    margin: 0;
+}
+form {
+    margin: 0;
+}
+fieldset {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+label {
+    cursor: pointer;
+}
+legend {
+    border: 0 none;
+    padding: 0;
+}
+button, input, select, textarea {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+}
+button, input {
+    line-height: normal;
+}
+table button, table input {
+}
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+}
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+}
+input[type="search"] {
+    box-sizing: content-box;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0 none;
+    padding: 0;
+}
+textarea {
+    overflow: auto;
+    resize: vertical;
+    vertical-align: top;
+}
+input:valid, textarea:valid {
+}
+input:invalid, textarea:invalid {
+    background-color: #f0dddd;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td {
+    vertical-align: top;
+}
+
+a {
+    color: #009900;
+    text-decoration: none;
+    transition: all 0.1s ease-in 0s;
+    text-rendering: optimizeLegibility;
+}
+a:visited {
+    color: #006600;
+}
+a:hover {
+    color: #666666;
+}
+a:focus {
+    outline: thin dotted;
+}
+h1, h2, h3 {
+    color: #ff4b24;
+    margin: 0;
+    padding: 5px 0 5px 0;
+    text-rendering: optimizeLegibility;
+}
+h1 {
+    font: 24px/26px 'Lato', arial, helvetica;
+}
+h2 {
+    font: 22px/24px 'Lato', arial, helvetica;
+}
+h3 {
+    font: 16px/18px 'Lato', arial, helvetica;
+    color: #009900;
+}
+p {
+    color: #ababab;
+    font: 16px/20px 'Lato', arial, helvetica;
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+}
+
+.green-ish {
+    color: #009900;
+}
+.orange-ish {
+    color: #ff4b24;
+}
+.white-ish {
+    color: #999999;
+}
+.push-left {
+    text-align: left;
+}
+.pull-right {
+    float: right;
+}
+/** buttons **/
+.button {
+    background: #ff4b24;
+    border: 1px solid #333333;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+    color: #ffffff !important;
+    font-family: arial;
+    font-size: 12px;
+    padding: 10px 30px;
+    text-rendering: optimizeLegibility;
+}
+.button:hover {
+  color: #333333 !important;
+  background: #cccccc;
+  border: 1px solid #333333;
+}
+
+.links a {
+    color: #006600;
+}
+.links a:hover {
+    color: #009900;
+}
+/** mobile 1st so starting at min-320 **/
+/** This is where the Magic starts **/
+
+.awards {
+    background: url("../img/awards.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 114px;
+    left: 0;
+    outline: medium none;
+    position: absolute;
+    text-indent: -9999em;
+    top: 200px;
+    width: 110px;
+}
+.css-media:after {
+    color: #eee;
+    content: "min-320 ";
+}
+.hidden-xs {
+    display: none !important;
+}
+#container, #container_port {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+#container ul, #container ol {
+    margin: 5px 0;
+    padding: 0 0 0 40px;
+}
+#container ul li, #container ol li {
+    margin: 5px 0;
+}
+
+.iguanaman, .bio, .portfolio, .showroom, .info {
+    padding: 25px 0 10px 0;
+}
+.iguanaman {
+    left: auto;
+    margin: 0 auto;
+    max-width: 280px;
+    position: relative;
+    top: auto;
+    z-index: 2;
+}
+.portfolio {
+    left: auto;
+    margin: 0 auto;
+    max-width: 280px;
+    position: relative;
+    top: auto;
+    z-index: 2;
+}
+#phone01 {
+    visibility: hidden;
+}
+#phone02 {
+    visibility: hidden;
+}
+
+.bio, .info {
+    left: auto;
+    margin: 0 auto;
+    max-width: 280px;
+    position: relative;
+    top: auto;
+    z-index: 2;
+}
+.bio p, .info p {
+    padding: 5px 0 5px 0;
+}
+
+.iguanaman, .bio, .portfolio, .info, .footer, .copyright {
+    text-align: center;
+}
+.portfolio, .info {
+    text-align: left;
+}
+.navi select {
+    display: none;
+    width: 200px;
+}
+.navi ul, .navi p {
+    display: inline-block;
+}
+
+/** portfolio starts here **/
+.portfolio {
+    /** float: left; **/
+    /** margin: 0; **/
+    position: relative;
+    width: 100%;
+    z-index: 900;
+}
+.portfolio {
+    /** float: left; **/
+    position: relative;
+    width: 100%;
+}
+.portfolio article {
+    background: none repeat scroll 0 0 #006600;
+    border: 1px solid #006600;
+    border-radius: 150px;
+    float: left;
+    height: 280px;
+    margin: 0 0 25px 0;
+    overflow: hidden;
+    padding: 9px;
+    position: relative;
+    transition: all 0.1s ease-in 0s;
+    width: 280px;
+}
+
+.portfolio article header {
+    height: 280px;
+    position: relative;
+    width: 280px;
+    z-index: 2;
+}
+.portfolio article header .details {
+    background: none repeat scroll 0 0 rgba(39, 33, 35, 1.0);
+    height: 68px;
+    left: 0;
+    padding: 15px 0;
+    position: absolute;
+    text-align: center;
+    top: 290px;
+    transition: all 0.1s ease-in 0s;
+    width: 280px;
+}
+.portfolio article header h1 {
+    /** color: #ff4b24; **/
+    color: #009900;
+    font-size: 18px;
+    line-height: 1.15;
+    margin-bottom: 5px;
+}
+.portfolio article header p, .portfolio article header p a {
+    /** color: #ff4b24; **/
+    color: #009900;
+    font-size: 14px;
+    line-height: 1.15;
+}
+.portfolio article img {
+    border-radius: 140px;
+    left: 9px;
+    padding: 0;
+    position: absolute;
+    top: 9px;
+}
+.portfolio article .clr {
+    opacity: 0;
+    transition: all 0.2s ease-in 0s;
+    z-index: 1;
+}
+.portfolio article:hover {
+    background: none repeat scroll 0 0 #272123;
+    border: 1px solid #272123;
+}
+.portfolio article:hover header .details {
+    top: 192px;
+}
+.portfolio article:hover .clr {
+    opacity: 1;
+}
+.portfolio-single {
+    float: left;
+    padding-bottom: 30px;
+    position: relative;
+    width: 100%;
+}
+.portfolio-single .showcase {
+    float: left;
+    width: 630px;
+}
+.portfolio-single .showcase p {
+    margin-bottom: 20px;
+}
+.portfolio-single .showcase p:last-child {
+    margin: 0;
+}
+.portfolio-single .showcase img {
+    background: none repeat scroll 0 0 #d0d0d0;
+    border: 1px solid #b9b9b9;
+    padding: 9px;
+}
+.portfolio-single .summary {
+    float: right;
+    width: 300px;
+}
+.portfolio-single .summary header {
+    margin-bottom: 20px;
+}
+.portfolio-single .summary header h1 {
+    color: #443a3d;
+    line-height: 32px;
+}
+.portfolio-single .summary header p {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 22px;
+    margin: 0;
+}
+.portfolio-single .summary .portfolio-description {
+    color: #443a3d;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.portfolio-single .summary .portfolio-description h2 {
+    font: 22px/22px 'LeagueGothicRegular',helvetica,arial,sans-serif;
+    margin-bottom: 20px;
+}
+.portfolio-single .summary .portfolio-description p {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.portfolio-single .summary .portfolio-description ul {
+    margin-bottom: 20px;
+    margin-left: 25px;
+    margin-top: -10px;
+    padding: 0;
+}
+.portfolio-single .summary .portfolio-url a {
+    background: none repeat scroll 0 0 #ff4b24;
+    border: 0 none;
+    border-radius: 5px;
+    color: #fff;
+    font: 18px/18px 'LeagueGothicRegular',helvetica,arial,sans-serif;
+    letter-spacing: 1px;
+    padding: 7px 10px;
+    text-transform: uppercase;
+    transition: all 0.1s ease-in 0s;
+    width: auto;
+}
+.portfolio-single .summary .portfolio-url a span {
+}
+.portfolio-single .summary .portfolio-url a:hover {
+    background: none repeat scroll 0 0 #67585e;
+}
+/** Showroom **/
+.showroom {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 900;
+}
+.me {
+    padding: 0 10px 0 10px;
+    position: relative;
+    text-align: left;
+    z-index: 900;
+}
+
+.bio img, .portfolio img, .showroom img, .info img {
+    padding: 0 0 25px 0;
+}
+.youtube-player {
+    background: none repeat scroll 0 0 rgba(0, 100, 0, 0.55);
+    border: 1px solid #666666;
+    padding: 10px;
+}
+.youtube-player {
+    box-sizing: border-box;
+    height: 363px;
+    width: 630px;
+}
+.showroom .gallery, .gallery {
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.showroom .gallery img, .gallery img {
+    background: none repeat scroll 0 0 rgba(0, 100, 0, 0.55);
+    border: 1px solid #666666;
+    padding: 10px;
+}
+.showroom .gallery img, .gallery img {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+}
+.showroom .gallery p {
+    margin-bottom: 25px;
+}
+.showroom .info {
+    float: none;
+    margin: 0 auto;
+    text-align: left;
+}
+.showroom .abootMe {
+    padding: 150px 0 0 0;
+    text-align: center;
+}
+.copyright p {
+    color: #666666;
+    font-size: 10px;
+}
+/** --------------------------------------------------------------------------------------------------------------------- **/
+
+@media only screen and (min-width: 480px) {
+    .css-media:after {
+        color: #eee;
+        content: "min-480 ";
+    }
+    .hidden-xs {
+        display: none !important;
+    }
+    #container, #container_port {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        width: 480px;
+    }
+    
+    .bio, .info {
+    max-width: 450px;
+    }
+
+}
+/** --------------------------------------------------------------------------------------------------------------------- **/
+
+@media only screen and (min-width: 768px) {
+    .css-media:after {
+        color: #eee;
+        content: "min-768 ";
+    }
+    .hidden-xs {
+        display: none !important;
+    }
+    #container, #container_port {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        width: 750px;
+    }
+    .showroom .gallery img {
+        box-sizing: border-box;
+        height: auto;
+        width: auto;
+    }
+    .showroom .info {
+        padding: 0 60px 0 60px;
+    }
+    .bio, .info {
+    max-width: 610px;
+    }
+    .bio h1, .info h1 {
+        font: 20px/22px 'Lato',arial,helvetica;
+    }
+    .bio h2, .info h2 {
+        font: 16px/18px 'Lato',arial,helvetica;
+    }
+    .bio h3, .info h3 {
+        font: 14px/16px 'Lato',arial,helvetica;
+    }
+
+
+    
+
+}
+/** --------------------------------------------------------------------------------------------------------------------- **/
+
+@media only screen and (min-width: 1024px) {
+    .css-media:after {
+        color: #eee;
+        content: "min-1024 ";
+    }
+    .hidden-xs {
+        display: inline-block !important;
+    }
+    .hidden-lg {
+        display: none !important;
+    }
+    #container, #container_port {
+        margin: 0px;
+        padding: 0 10px;
+        width: 960px;
+    }
+    /** Showroom **/
+    .navi select {
+        display: none;
+    }
+    .navi ul, .navi p {
+        display: inline;
+    }
+    .navi ul {
+        padding: 0;
+    }
+    .navi li {
+        display: inline;
+    }
+    .navi li a {
+        display: inline-block;
+	color: #cccccc;
+	font: bold 12px;
+	text-decoration: none;
+    }
+    .navi li a:hover {
+        color: #006600;
+    }
+    .navi li:first-child {
+        padding: 0 0 0 25px !important;
+    }
+    .navi li:last-child {
+	padding-left: 10px;
+    }
+    #container .iguanaman, #container_port .iguanaman, #container .bio, #container_port .bio, , #container .info, #container_port .info {
+        position: absolute;
+    }
+    .iguanaman {
+        padding: 25px 0 0 50px;
+        position: fixed;
+        top: 0;
+        width: 300px;
+        z-index: 2;
+    }
+    .bio, .info {
+        padding: 25px 0 0 50px;
+        position: fixed;
+        top: 285px;
+        width: 300px;
+        z-index: 2;
+    }
+    .info {
+        text-align: left;
+    }
+    .footer {
+        padding: 25px 0 0 50px;
+        position: fixed;
+        top: 450px;
+        width: 225px;
+        z-index: 2;
+    }
+
+    .portfolio {
+        left: 400px;
+        max-width: 300px;
+        padding-top: 25px;
+        position: absolute;
+        top: 0;
+        width: auto;
+        z-index: 2;
+    }
+    .showroom, .me {
+        left: 400px;
+        max-width: 635px;
+        padding-top: 25px;
+        position: absolute;
+        top: 0;
+        width: auto;
+        z-index: 2;
+    }
+
+    .showroom .gallery img {
+        box-sizing: border-box;
+        height: auto;
+        width: auto;
+    }
+
+    .showroom .gallery{
+        float: left;
+        width: 630px;
+    }
+    .showroom .info, .showroom .abootMe {
+        float: right;
+        width: 300px;
+    }
+    .showroom .info {
+        padding: 0;
+    }
+    .me .info {
+        float: left;
+        width: 630px;
+    }
+}
+/** --------------------------------------------------------------------------------------------------------------------- **/
+
+@media only screen and (min-width: 1224px) {
+    .css-media:after {
+        color: #eee;
+        content: "min-1224 ";
+    }
+
+
+
+}
+/** --------------------------------------------------------------------------------------------------------------------- **/
+
+@media only screen and (min-width: 1824px) {
+    .css-media:after {
+        color: #eee;
+        content: "min-1824 ";
+    }
+
+
+
+}
+/** --------------------------------------------------------------------------------------------------------------------- **/
+
+/** iPhone4 portrait and landscape **/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+    
+    .css-media:after {
+        color: #eee;
+        content: "iPhone4 - portrait and landscape";
+    }
+
+    h1, h2, h3, p, a, small {
+        text-rendering: geometricPrecision;
+    }
+
+    .hidden-xs {
+        display: none !important;
+    }
+
+}
+
+/** Retina iPhone5 portrait and landscape **/
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) {
+    
+    .css-media:after {
+        color: #eee;
+        content: "iPhone5 - portrait and landscape";
+    }
+
+    h1, h2, h3, p, a, small {
+        text-rendering: geometricPrecision;
+    }
+    .bio h1, .info h1 {
+        font: 30px/30px 'Lato',arial,helvetica;
+        text-rendering: geometricPrecision;
+    }
+    .bio h2, .info h2 {
+        font: 28px/28px 'Lato',arial,helvetica;
+        text-rendering: geometricPrecision;
+    }
+    .bio h3, .info h3 {
+        font: 26px/26px 'Lato',arial,helvetica;
+        text-rendering: geometricPrecision;
+    }
+
+    .hidden-xs {
+        display: none !important;
+    }
+
+}
+
+/** iPad 4 & iPad Mini portrait and landscape **/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    
+    .css-media:after {
+        color: #eee;
+        content: "iPad & iPad Mini - portrait and landscape";
+    }
+
+    h1, h2, h3, p, a, small {
+        text-rendering: geometricPrecision;
+    }
+
+    .hidden-xs {
+        display: none !important;
+    }
+
+}
+
+
+/** Retina iPad 4 portrait and landscape **/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    
+    .css-media:after {
+        color: #eee;
+        content: "iPad Retina - portrait and landscape";
+    }
+
+    h1, h2, h3, p, a, small {
+        text-rendering: geometricPrecision;
+    }
+
+    .hidden-xs {
+        display: none !important;
+    }
+
+}
+
+
+/* iPhone 5/5S Retina Display Portrait */
+@media screen and (device-aspect-ratio: 40/71) and (max-device-width: 640px) and (orientation:portrait) {}
+
+/* iPhone 5/5S Retina Display Landscape */
+@media screen and (device-aspect-ratio: 40/71) and (max-device-width: 640px) and (orientation:landscape) {}
+
+/* iPad 3/4/Air Retina Display Portrait */
+@media screen and (device-aspect-ratio: 3/4) and (max-device-width: 1536px) and (orientation:portrait) {}
+
+/* iPad 3/4/Air Retina Display Landscape */
+@media screen and (device-aspect-ratio: 3/4) and (max-device-width: 1536px) and (orientation:landscape) {}
